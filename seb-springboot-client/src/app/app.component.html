@@ -1,0 +1,37 @@
+<div class="main-wrapper">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>Please complete survey: </h2>
+  <div class="main-form">
+    <form [formGroup]="formMain" (ngSubmit)="onSubmit()">
+      <select class="form-control"
+              formControlName="age"
+              required>
+        <option></option>
+        <option *ngFor="let age of ageOptions"
+                [ngValue]="age.value">{{age.viewValue}}</option>
+      </select>
+      <input id="isStudent"
+             type="checkbox"
+             formControlName="isStudent">
+      <label for="isStudent">Is student</label>
+      <select class="form-control"
+              formControlName="income"
+              required>
+        <option></option>
+        <option *ngFor="let income of incomeOptions"
+                [ngValue]="income.value">{{income.viewValue}}</option>
+      </select>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+<div *ngIf="showMessage" class="error-msg">Not all fields selected</div>
+  <div *ngIf="productsResult.length > 0">
+    Products:
+    <div *ngFor="let product of productsResult">
+      {{product}}
+    </div>
+  </div>
+</div>
+
