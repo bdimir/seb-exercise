@@ -2,11 +2,18 @@
 App is a rest service, which returns suggested bank services based upon answers to questions that the
 customer has given.
 
-## Run app
+## Run app backend
 1. Open in Spring Tool Suite 3 or later
 2. Right click src/main/java -> run as -> Spring Boot App
 
-## Endpoint
+## Run app client
+1. npm install
+2. npm start
+
+## Client url
+http://localhost:4200/
+
+## Endpoint backend
 By default the app local url:
 http://localhost:8080/products
 
