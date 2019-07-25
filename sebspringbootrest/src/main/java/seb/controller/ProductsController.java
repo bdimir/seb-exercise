@@ -18,7 +18,7 @@ import seb.repository.rules.RulesRepository;
 
 @RestController
 public class ProductsController {
-
+	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value = "/products", method = RequestMethod.POST)
 	public ResponseEntity<List<String>> getProducts(@RequestBody PersonAnswers personAnswers) {
 		IProductRulesRepository rules = new RulesRepository();
