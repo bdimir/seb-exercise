@@ -24,9 +24,11 @@
                 [ngValue]="income.value">{{income.viewValue}}</option>
       </select>
       <button type="submit" class="btn btn-success">Submit</button>
+      <div *ngIf="submitted && formMain.controls.age.errors" class="error-msg">Age is not selected</div>
+      <div *ngIf="submitted && formMain.controls.income.errors" class="error-msg">Income is not selected</div>
     </form>
   </div>
-<div *ngIf="showMessage" class="error-msg">Not all fields selected</div>
+
   <div *ngIf="productsResult.length > 0">
     Products:
     <div *ngFor="let product of productsResult">
