@@ -9,46 +9,46 @@ public class RulesRepository implements IProductRulesRepository {
 	private IncomeMoreThanZeroRule _incomeMoreThanZeroRule;
 	private IncomeMoreThan12KRule _incomeMoreThan12KRule;
 	private IncomeLessThan12KRule _incomeLessThan12KRule;
-	private IncomeMoreThan40KRule _incomeMoreThan40K;
+	private IncomeMoreThan40KRule _incomeMoreThan40KRule;
 	private MustBeStudentRule _mustBeStudentRule;
 
 	@Override
-	public IProductRule getAgeLessThan18Rule() {
+	public AgeLessThan18Rule getAgeLessThan18Rule() {
 		return this._ageLessThan18Rule;
 	}
 	
 	@Override
-	public IProductRule getAgeOver17Rule() {
+	public AgeOver17Rule getAgeOver17Rule() {
 		return this._ageOver17Rule;
 	}
 	
 	@Override
-	public IProductRule getAge65PlusRule() {
+	public Age65PlusRule getAge65PlusRule() {
 		return this._age65PlusRule;
 	}
 
 	@Override
-	public IProductRule getIncomeMoreThanZeroRule() {
+	public IncomeMoreThanZeroRule getIncomeMoreThanZeroRule() {
 		return this._incomeMoreThanZeroRule;
 	}
 
 	@Override
-	public IProductRule getIncomeMoreThan12KRule() {
+	public IncomeMoreThan12KRule getIncomeMoreThan12KRule() {
 		return this._incomeMoreThan12KRule;
 	}
 
 	@Override
-	public IProductRule getIncomeLessThan12KRule() {
+	public IncomeLessThan12KRule getIncomeLessThan12KRule() {
 		return this._incomeLessThan12KRule;
 	}
 
 	@Override
-	public IProductRule getIncomeMoreThan40K() {
-		return this._incomeMoreThan40K;
+	public IncomeMoreThan40KRule getIncomeMoreThan40KRule() {
+		return this._incomeMoreThan40KRule;
 	}
 
 	@Override
-	public IProductRule getMustBeStudentRule() {
+	public MustBeStudentRule getMustBeStudentRule() {
 		return this._mustBeStudentRule;
 	}
 
@@ -60,7 +60,7 @@ public class RulesRepository implements IProductRulesRepository {
 		this._incomeMoreThanZeroRule = new IncomeMoreThanZeroRule();
 		this._incomeMoreThan12KRule = new IncomeMoreThan12KRule();
 		this._incomeLessThan12KRule = new IncomeLessThan12KRule();
-		this._incomeMoreThan40K = new IncomeMoreThan40KRule();
+		this._incomeMoreThan40KRule = new IncomeMoreThan40KRule();
 		this._mustBeStudentRule = new MustBeStudentRule();
 	}
 }

@@ -1,12 +1,12 @@
 package seb.domain.products;
 
-import java.util.List;
-import seb.domain.rules.IProductRule;
+import seb.domain.rules.*;
 
 public class StudentAccountProduct extends ProductBase {
 
-	public StudentAccountProduct(List<IProductRule> productRules) {
-		ProductRules = productRules;
+	public StudentAccountProduct(MustBeStudentRule rule1, AgeOver17Rule rule2) {
+		ProductRules.add(rule1);
+		ProductRules.add(rule2);
 	}
 
 	@Override

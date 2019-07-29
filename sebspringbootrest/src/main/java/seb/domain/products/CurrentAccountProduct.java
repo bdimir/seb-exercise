@@ -1,13 +1,14 @@
 package seb.domain.products;
 
-import java.util.List;
-import seb.domain.rules.IProductRule;
+import seb.domain.rules.AgeOver17Rule;
+import seb.domain.rules.IncomeMoreThanZeroRule;
 
 public class CurrentAccountProduct extends ProductBase {
 	
-	public CurrentAccountProduct(List<IProductRule> productRules)
+	public CurrentAccountProduct(IncomeMoreThanZeroRule rule1, AgeOver17Rule rule2)
     {
-        ProductRules = productRules;
+        ProductRules.add(rule1);
+        ProductRules.add(rule2);
     }
 
 	@Override

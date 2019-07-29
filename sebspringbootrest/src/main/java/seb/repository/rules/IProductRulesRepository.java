@@ -1,23 +1,23 @@
 package seb.repository.rules;
 
-import seb.domain.rules.IProductRule;
+import seb.domain.rules.*;
 
 public interface IProductRulesRepository {
 
-	IProductRule getAgeLessThan18Rule();
+	AgeLessThan18Rule getAgeLessThan18Rule();
 
-	IProductRule getAgeOver17Rule();
+	AgeOver17Rule getAgeOver17Rule();
 
-	IProductRule getAge65PlusRule();
+	Age65PlusRule getAge65PlusRule();
 
-	IProductRule getIncomeMoreThanZeroRule();
+	IncomeMoreThanZeroRule getIncomeMoreThanZeroRule();
 
-	IProductRule getIncomeMoreThan12KRule();
+	IncomeMoreThan12KRule getIncomeMoreThan12KRule();
 
-	IProductRule getIncomeLessThan12KRule();
+	IncomeLessThan12KRule getIncomeLessThan12KRule();
 
-	IProductRule getIncomeMoreThan40K();
+	IncomeMoreThan40KRule getIncomeMoreThan40KRule();
 
-	IProductRule getMustBeStudentRule();
+	MustBeStudentRule getMustBeStudentRule();
 
 }

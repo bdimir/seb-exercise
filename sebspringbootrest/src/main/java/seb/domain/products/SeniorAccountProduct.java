@@ -1,13 +1,11 @@
 package seb.domain.products;
 
-import java.util.List;
-import seb.domain.rules.IProductRule;
-
+import seb.domain.rules.*;
 
 public class SeniorAccountProduct extends ProductBase {
 
-	public SeniorAccountProduct(List<IProductRule> productRules) {
-		ProductRules = productRules;
+	public SeniorAccountProduct(Age65PlusRule rule) {
+		ProductRules.add(rule);
 	}
 
 	@Override

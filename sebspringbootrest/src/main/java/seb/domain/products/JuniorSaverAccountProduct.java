@@ -1,15 +1,13 @@
 package seb.domain.products;
 
-import java.util.List;
-import seb.domain.rules.IProductRule;
+import seb.domain.rules.AgeLessThan18Rule;
 
 public class JuniorSaverAccountProduct extends ProductBase {
 
-	public JuniorSaverAccountProduct(List<IProductRule> productRules)
-    {
-        ProductRules = productRules;
-    }
-	
+	public JuniorSaverAccountProduct(AgeLessThan18Rule rule1) {
+		ProductRules.add(rule1);
+	}
+
 	@Override
 	public String GetName() {
 		return ProductNames.JuniorSaverAccount;
