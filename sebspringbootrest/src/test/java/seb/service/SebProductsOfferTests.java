@@ -8,8 +8,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import seb.domain.products.ProductNames;
 import seb.models.dto.*;
+import seb.product.ProductNames;
 import seb.products.service.ProductsOfferService;
 import seb.repository.products.ProductsRepository;
 import seb.repository.rules.RulesRepository;

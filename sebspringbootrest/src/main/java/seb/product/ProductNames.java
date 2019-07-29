@@ -1,4 +1,4 @@
-package seb.domain.products;
+package seb.product;
 
 public class ProductNames {
 	public static final String CurrentAccount = "Current Account";

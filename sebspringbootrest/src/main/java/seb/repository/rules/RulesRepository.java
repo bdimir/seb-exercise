@@ -3,55 +3,54 @@ package seb.repository.rules;
 import seb.domain.rules.*;
 
 public class RulesRepository implements IProductRulesRepository {
-	private AgeLessThan18Rule _ageLessThan18Rule;
-	private AgeOver17Rule _ageOver17Rule;
-	private Age65PlusRule _age65PlusRule;
-	private IncomeMoreThanZeroRule _incomeMoreThanZeroRule;
-	private IncomeMoreThan12KRule _incomeMoreThan12KRule;
-	private IncomeLessThan12KRule _incomeLessThan12KRule;
-	private IncomeMoreThan40KRule _incomeMoreThan40KRule;
-	private MustBeStudentRule _mustBeStudentRule;
+	private IProductRule _ageLessThan18Rule;
+	private IProductRule _ageOver17Rule;
+	private IProductRule _age65PlusRule;
+	private IProductRule _incomeMoreThanZeroRule;
+	private IProductRule _incomeMoreThan12KRule;
+	private IProductRule _incomeLessThan12KRule;
+	private IProductRule _incomeMoreThan40KRule;
+	private IProductRule _mustBeStudentRule;
 
 	@Override
-	public AgeLessThan18Rule getAgeLessThan18Rule() {
+	public IProductRule getAgeLessThan18Rule() {
 		return this._ageLessThan18Rule;
 	}
-	
+
 	@Override
-	public AgeOver17Rule getAgeOver17Rule() {
+	public IProductRule getAgeOver17Rule() {
 		return this._ageOver17Rule;
 	}
-	
+
 	@Override
-	public Age65PlusRule getAge65PlusRule() {
+	public IProductRule getAge65PlusRule() {
 		return this._age65PlusRule;
 	}
 
 	@Override
-	public IncomeMoreThanZeroRule getIncomeMoreThanZeroRule() {
+	public IProductRule getIncomeMoreThanZeroRule() {
 		return this._incomeMoreThanZeroRule;
 	}
 
 	@Override
-	public IncomeMoreThan12KRule getIncomeMoreThan12KRule() {
+	public IProductRule getIncomeMoreThan12KRule() {
 		return this._incomeMoreThan12KRule;
 	}
 
 	@Override
-	public IncomeLessThan12KRule getIncomeLessThan12KRule() {
+	public IProductRule getIncomeLessThan12KRule() {
 		return this._incomeLessThan12KRule;
 	}
 
 	@Override
-	public IncomeMoreThan40KRule getIncomeMoreThan40KRule() {
+	public IProductRule getIncomeMoreThan40KRule() {
 		return this._incomeMoreThan40KRule;
 	}
 
 	@Override
-	public MustBeStudentRule getMustBeStudentRule() {
+	public IProductRule getMustBeStudentRule() {
 		return this._mustBeStudentRule;
 	}
-
 
 	public RulesRepository() {
 		this._ageLessThan18Rule = new AgeLessThan18Rule();
